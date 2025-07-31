@@ -5,15 +5,17 @@
 package baitap4;
 
 import java.util.Scanner;
+import java.nio.charset.StandardCharsets;
 
 /**
  *
  * @author lap top
  */
 public class Main {
-      public static void main(String[] args) {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
         // Tạo một đối tượng Scanner để đọc input từ người dùng, dùng chung cho toàn bộ ứng dụng
-        Scanner scanner = new Scanner(System.in);
         // Tạo đối tượng quản lý sách (chứa danh sách sách và các chức năng xử lý sách)
         QuanLySach quanLySach = new QuanLySach();
 

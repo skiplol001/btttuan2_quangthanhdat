@@ -14,12 +14,12 @@ public class MenuChucNang {
 
     // Hiển thị các lựa chọn cho người dùng
     public void hienThiMenu() {
-        System.out.println("===== MENU QUẢN LÝ SÁCH =====");
-        System.out.println("1. Hiển thị tất cả sách");
-        System.out.println("2. Tìm sách theo tên");
-        System.out.println("3. Thống kê sách theo năm xuất bản");
-        System.out.println("0. Thoát");
-        System.out.print("Nhập lựa chọn của bạn: ");
+        System.out.println("===== MENU QUAN LY SACH =====");
+        System.out.println("1. Hien thi tat ca sach");
+        System.out.println("2. Tim sach theo ten");
+        System.out.println("3. Thong ke sach theo nam xuat ban");
+        System.out.println("0. Thoat");
+        System.out.print("Nhap lua chon");
     }
 
     // Lấy lựa chọn của người dùng từ bàn phím
@@ -29,7 +29,7 @@ public class MenuChucNang {
             luaChon = scanner.nextInt();
             scanner.nextLine(); // Đọc bỏ ký tự Enter còn lại sau khi nhập số
         } catch (java.util.InputMismatchException e) {
-            System.out.println("Lỗi: Vui lòng nhập một số hợp lệ.");
+            System.out.println("Loi:");
             scanner.nextLine(); // Đọc bỏ dòng nhập sai
         }
         return luaChon;
@@ -37,7 +37,7 @@ public class MenuChucNang {
 
     // Lấy từ khóa tìm kiếm từ người dùng (vì tìm kiếm cần input string)
     public String layTuKhoaTimKiem(Scanner scanner) {
-        System.out.print("Nhập từ khóa tên sách cần tìm: ");
+        System.out.print("tim kiem: ");
         return scanner.nextLine();
     }
 }
